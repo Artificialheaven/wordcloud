@@ -3,12 +3,12 @@
 
 # 本地部署
 + 需要
-- Python3.6+
-* requests
-* websockets
-* jieba
-* wordcloud
-* 以上均为需要 pip install 的python包。
+  - Python3.6+
+    * requests
+    * websockets
+    * jieba
+    * wordcloud
+    * 以上均为需要 pip install 的python包。
 
 # 启动命令
 [Windows] python main.py

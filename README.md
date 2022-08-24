@@ -17,6 +17,7 @@
 # 编译方法
 pyinstaller main.spec
 **可能需要手动修改 wordcloud 的源码，方法请自行谷歌。**
+编译后可以直接运行可执行文件，但是我打包不出来，大佬可以自己试试。
 
 # 需要
 + [字体] simsun.ttf 直接存放在 main.py 同目录处。

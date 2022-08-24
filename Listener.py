@@ -60,7 +60,11 @@ class Listener:
             sender(user_id, msg)
         """
         if msg == 'rm':
-            autoclear()
+            #autoclear()
+            print('执行删除任务')
+            for file in os.listdir('./wordCloud'):
+                os.remove('./wordCloud/' + file)
+            self.sendPrivateMsg(user_id, '删除任务执行完毕！')
         return ''
 
 def autoclear():

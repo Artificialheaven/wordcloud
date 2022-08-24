@@ -1,5 +1,6 @@
 import datetime
 import os
+import re
 import threading
 import time
 
@@ -45,6 +46,7 @@ class Listener:
 
             else:
                 #   分群把文本填充到txt
+                msg = re.sub('\[CQ:.*\]', '', msg)
                 f = open(f'./wordCloud/{group_id}.txt','a')
                 f.write(msg)
                 f.close()

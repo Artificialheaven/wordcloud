@@ -7,10 +7,18 @@ class cy:
     Len = 0
 
     def __init__(self, words, Lent):
+        """
+        :param words: 欲生成的文本
+        :param Lent: 欲展示的词组数
+        """
         self.strLen = words
         self.Len = Lent
 
     def showWordCloud(self, filename):
+        """
+        :param filename: 欲存储到的文件地址
+        :return: None
+        """
         print(self.strLen)
         # 解析拆分词组  lcut的方法
         words = jieba.lcut(self.strLen)
